@@ -1,0 +1,19 @@
+{
+  "site": "Example Site",
+  "credential": {
+    "mode": "cmdkey",
+    "target": "192.168.1.10",
+    "user": "192.168.1.10\\nasadmin",
+    "password": "P@ssw0rd-Example"
+  },
+  "options": {
+    "showThisPcIcon": true,
+    "logonTask": false,
+    "restartExplorer": false
+  },
+  "drives": [
+    { "letter": "Z", "unc": "\\\\192.168.1.10\\Company\\Shared", "label": "Shared", "group": "standard" },
+    { "letter": "Y", "unc": "\\\\192.168.1.10\\Company\\%USERFOLDER%", "label": "Home", "group": "standard", "tokens": ["USERFOLDER"] },
+    { "letter": "X", "unc": "\\\\192.168.1.10\\Company\\Management", "label": "Management", "group": "manager" }
+  ]
+}

@@ -1,0 +1,6 @@
+# Site profiles can hold plaintext passwords - only the example is tracked.
+profiles/*
+!profiles/example-site.json
+# Saved logs and reports describe real PCs and users.
+MapDrives-log-*.txt
+MAPDRIVES.CMD
