@@ -14,19 +14,9 @@ Grab the latest zip from **[Releases](../../releases/latest)**. The SHA-256 chec
 Get-FileHash .\Mapped-Drive-Toolkit.zip -Algorithm SHA256
 ```
 
-## Run it in Backstage
+## Run it
 
-1. Extract the zip to `C:\temp`, giving `C:\temp\Mapped-Drive-Toolkit\`. Keep the files together.
-2. **Lock the folder down before you run anything from it.** By default every signed-in user can modify files under `C:\temp`, and you're about to run these scripts as SYSTEM. In the Backstage command prompt:
-
-   ```bat
-   icacls C:\temp\Mapped-Drive-Toolkit /inheritance:r /grant:r *S-1-5-18:(OI)(CI)F *S-1-5-32-544:(OI)(CI)F *S-1-5-32-545:(OI)(CI)RX
-   ```
-
-   That leaves SYSTEM and Administrators in full control and everyone else read-only.
-3. Double-click **`Launch-MapDrives-Gui.cmd`**. The banner shows the context (SYSTEM or user), the signed-in user and the toolkit version.
-
-It also runs as the user on an ordinary desktop.
+Unzip to `C:\temp` (giving `C:\temp\Mapped-Drive-Toolkit\`) and double-click **`Launch-MapDrives-Gui.cmd`**. Keep the files together. The banner shows the context (SYSTEM in Backstage, or the user), the signed-in user and the toolkit version.
 
 ## Why "in the user's session" matters
 
